@@ -77,7 +77,8 @@ canvas {
 }
 
 .promo {
-    display: none;
+    display: none;  
+    visibility:  hidden;
     /* display: table; */
     position: absolute;
     top: 0;
@@ -88,7 +89,7 @@ canvas {
     overflow: auto;
     color: lightblue;
     background-color: #0E0F1A;
-    animation: promo-appear-animation 0.35s ease-out;
+    /* animation: promo-appear-animation 0.35s ease-out; */
 }
 
 .promo-middle {
@@ -191,18 +192,6 @@ canvas {
     background:  linear-gradient(90deg, #5E11FF  0%, #F87516 100%);
     ;
 }
-
-@keyframes promo-appear-animation {
-    0% {
-        transform: scale(2);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
 img , div{
     position:  relative;
     z-index: 999;

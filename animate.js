@@ -160,7 +160,7 @@ animateDivs.forEach((animateDiv, i) => {
 			trigger: animateDiv,
 			scrub: true,
 			start: "top 90%",
-			end: "top 50%",
+			end: "top 70%",
 		},
 		y: 20,
 		opacity: 0.1,
