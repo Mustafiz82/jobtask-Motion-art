@@ -1,10 +1,8 @@
 const overlay = document.getElementById("overlay")
 const underlay = document.getElementById("canvas")
 const stopPointer = document.querySelectorAll("button, a");
-const purchaseButton = document.getElementById("purchase")
 
 
-console.log(stopPointer);
 let isMoving = false;
 let timer;
 
@@ -17,7 +15,6 @@ underlay.addEventListener("mousemove", () => {
 
     timer = setTimeout(() => {
         isMoving = false;
-        console.log("Mouse stopped moving");
         overlay.style.pointerEvents = "auto"
 
     }, 100); 
@@ -35,15 +32,15 @@ window.addEventListener("mousemove", (e) => {
     let x = e.clientX;
     let y = e.clientY;
 
-    console.log(x, y, "window");
 
+    const purchaseButton = document.getElementById("purchase")
     const buttonCoordinate = purchaseButton.getBoundingClientRect();
+
     let buttonX = buttonCoordinate.x;
     let buttonY = buttonCoordinate.y;
     let buttonWidth = buttonCoordinate.width;
     let buttonHeight = buttonCoordinate.height;
 
-    console.log(buttonX, buttonY, "button");
 
     if (x >= buttonX && x <= (buttonX + buttonWidth) && y >= buttonY && y <= (buttonY + buttonHeight)) {
         purchaseButton.style.backgroundColor= "transparent"
@@ -52,7 +49,6 @@ window.addEventListener("mousemove", (e) => {
         // overlay.style.pointerEvents = "auto"
 
 
-        console.log(purchaseButton);
 
     }
 
@@ -67,9 +63,9 @@ window.addEventListener("mousemove", (e) => {
 });
 
 
-purchaseButton.addEventListener("mousemove " , () => {
-    purchaseButton.style.cursor = "pointer"
-})
+// purchaseButton.addEventListener("mousemove " , () => {
+//     purchaseButton.style.cursor = "pointer"
+// })
 
 
 

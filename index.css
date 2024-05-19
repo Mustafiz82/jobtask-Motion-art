@@ -1,7 +1,7 @@
 
 
 * {
-    user-select: none;
+    /* user-select: none; */
 }
 
 html, body {
@@ -19,7 +19,8 @@ body {
 canvas {
     width: 100vw;
     height: 100vh;
-    z-index: -99;
+    /* z-index: 0 ; */
+    position:  fixed;
 
 }
 
@@ -153,15 +154,16 @@ canvas {
 }
 
 .overlay {
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
+    /* width: 100vw;
+    height: 100vh; */
+    /* height: full; */
+    /* overflow-y: scroll; */
     background-color: transparent;
     z-index: 999; /* Set a higher z-index to make it appear above other elements */
-    position: absolute;
+    /* position: fixed;
     top: 0;
     left: 50%;
-    transform:  translateX(-50%);
+    transform:  translateX(-50%); */
     /* margin : auto; */
     /* pointer-events: none; */
     /* right: 0; */
@@ -199,4 +201,9 @@ canvas {
         transform: scale(1);
         opacity: 1;
     }
+}
+
+img , div{
+    position:  relative;
+    z-index: 999;
 }
