@@ -1,6 +1,6 @@
 # Motion Art
 
-This is a jobTask  to convert figma to react with some functionality
+This is a jobTask to replicate the home page of the provided website Motion Art Effect.
 
 ## Setup
 
