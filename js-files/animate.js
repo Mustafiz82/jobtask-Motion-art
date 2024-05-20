@@ -3,7 +3,7 @@
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {
-	console.log(e);
+	// console.log(e);
 });
 
 lenis.on("scroll", ScrollTrigger.update);
@@ -16,22 +16,22 @@ gsap.ticker.lagSmoothing(0);
 
 
 
-// Animating All The header Text 
+// Animating All The headLine Text 
 
 const splitType = document.querySelectorAll(".animateHeadline");
 
-console.log(splitType);
+// console.log(splitType);
 
 splitType.forEach((char, i) => {
 	const text = new SplitType(char, { types: " chars" });
-	console.log(text.chars);
+	// console.log(text.chars);
 
 	gsap.from(text.chars, {
 		scrollTrigger: {
 			trigger: text.chars,
 			scrub: true,
 			start: "top 90%",
-			end: "top 40%",
+			end: "top 50%",
 		},
 		y: 20,
 		opacity: 0.1,
@@ -88,7 +88,7 @@ gsap.to(animateOnApplyPageImage, {
 
 const imageOfRatings = document.querySelectorAll(".image-of-rating");
 
-console.log(imageOfRatings);
+// console.log(imageOfRatings);
 
 imageOfRatings.forEach((imageOfRating, i) => {
 	const imageOfRatingsTimeline = gsap.timeline({
