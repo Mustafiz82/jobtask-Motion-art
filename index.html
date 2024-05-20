@@ -17,7 +17,9 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="index.css" />
-		<title>WebGL Fluid Simulation</title>
+		<title>Motion Art</title>
+		
+		<link rel="icon" href="images/MotionArtEffect-logo-short.png" type="image/x-icon">
 
 		<script>
 			window.ga =
@@ -31,7 +33,7 @@
 		</script>
 
 		<script src="https://cdn.tailwindcss.com"></script>
-		<script type="text/javascript" src="dat.gui.min.js"></script>
+		<script type="text/javascript" src="js-files/dat.gui.min.js"></script>
 		<script
 			src="https://kit.fontawesome.com/5cbc10dd8b.js"
 			crossorigin="anonymous"
@@ -54,21 +56,12 @@
 						<span class="promo-close">&times;</span>
 					</div>
 					<div class="promo-body hidden">
-						<p>Try Fluid Simulation app!</p>
 						<div class="links-container">
 							<a class="link" id="apple_link" target="_blank">
-								<img
-									class="link-img"
-									alt="Download on the App Store"
-									src="app_badge.png"
-								/>
+
 							</a>
 							<a class="link" id="google_link" target="_blank">
-								<img
-									class="link-img"
-									alt="Get it on Google Play"
-									src="gp_badge.png"
-								/>
+								
 							</a>
 						</div>
 					</div>
@@ -76,6 +69,9 @@
 			</div>
 		</div>
 
+		<div>
+
+		</div>
 		<!-- This section will be overlay on canvas  -->
 
 		<div class="overlay" id="overlay">
@@ -83,7 +79,7 @@
 
 			<div class="max-w-screen-xl px-5 md:px-10  mx-auto">
 				<!-- Navbar  -->
-				<div style="z-index: 999; position: relative;" class="flex my-6  items-center justify-between">
+				<div style="z-index: 999; position: relative;"  class="flex my-6  items-center justify-between">
 					<img
 						class=""
 						src="images/MotionArtEffect-logo.png"
@@ -114,7 +110,7 @@
 						<div
 							class="text-xl text-center md:text-left  text-white opacity-90 font-sora "
 						>
-							<div class="mb-2 font-medium leading-[28px]">
+							<div class="mb-2 hidden md:block font-medium leading-[28px]">
 								<span class="text-[#F87516]"> Tra</span
 								><span class="gradient-text">nsf</span
 								><span class="text-[#5E11Ff]">orm</span><br />
@@ -123,9 +119,24 @@
 								><span class="text-[#5E11Ff]">ebsite</span>
 								<br />
 							</div>
+							<div class="mb-2 md:hidden font-medium leading-[28px]">
+								<span class="text-[#F87516]"> Tra</span
+								><span class="gradient-text">nsf</span
+								><span class="text-[#5E11Ff]">orm</span>
+								
+								<span class="text-[#5E11Ff] "
+									>Yo</span
+								><span class="text-[#5E11Ff] "
+									>ur
+								</span><br>
+								<span class="gradient-text "
+									>w</span
+								><span class="text-[#5E11Ff]">ebsite</span>
+								<br />
+							</div>
 
 							<span
-								class="py  font-thin leading-[20px] text-lg font-normal text-white md:opacity-90"
+								class="py  font-light leading-[20px] text-lg font-normal text-white "
 							>
 								With Motion <br class="hidden md:block" />
 								<span class="-mt-[2px]">Art Effect</span>
@@ -135,9 +146,9 @@
 
 					<!-- center div or main div  -->
 
-					<div class="max-w-[680px] text-center md:text-left md:-ml-14">
+					<div class="lg:max-w-[680px] md:max-w-[500px] text-center md:text-left md:-ml-14">
 						<h1
-							class=" text-3xl leading-relaxed	 md:leading-normal  md:text-[58px]  font-sora text-white md:opacity-90 md:font-semibold"
+							class=" text-3xl leading-relaxed	 md:leading-normal md:text-4xl lg:text-[58px]  font-sora text-white md:opacity-90 md:font-semibold"
 						>
 							Attract Your <br class="hidden md:block"/>
 							Visitors Attention With <br class="md:hidden"> Colorful <br />
@@ -423,8 +434,8 @@
 			</div>
 		</div>
 
-		<script src="animate.js"></script>
-		<script src="./script.js"></script>
-		<script src="pointer.js"></script>
+		<script src="js-files/script.js"></script>
+		<script src="js-files/pointer.js"></script>
+		<script src="js-files/animate.js"></script>
 	</body>
 </html>
